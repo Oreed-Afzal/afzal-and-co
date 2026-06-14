@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="700" viewBox="0 0 1600 700" role="img" aria-label="Speak with a Lawyer Today">
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#0a1530"/><stop offset="1" stop-color="#2a3f6b"/></linearGradient>
+    <pattern id="dots" width="28" height="28" patternUnits="userSpaceOnUse"><circle cx="2" cy="2" r="1.2" fill="#ffffff" opacity="0.05"/></pattern>
+  </defs>
+  <rect width="1600" height="700" fill="url(#g)"/>
+  <rect width="1600" height="700" fill="url(#dots)"/>
+  <g transform="translate(800, 324)" fill="none" stroke="#c8a44d" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" opacity="0.9">
+    <g transform="scale(2.1) translate(-12,-12)">
+      <path d="M12 3v18"/><path d="M7 21h10"/><path d="M5 7h14"/><path d="m5 7-3 6a3 3 0 0 0 6 0L5 7Z"/><path d="m19 7-3 6a3 3 0 0 0 6 0l-3-6Z"/><circle cx="12" cy="4" r="1.4"/>
+    </g>
+  </g>
+  <text x="50%" y="394" text-anchor="middle" font-family="Georgia, serif" font-size="67" fill="#ffffff" font-weight="600">Speak with a Lawyer Today</text>
+  <text x="50%" y="469" text-anchor="middle" font-family="Arial, sans-serif" font-size="33" fill="#c8a44d" letter-spacing="2">FREE CONSULTATION</text>
+</svg>

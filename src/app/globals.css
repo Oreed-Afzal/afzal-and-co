@@ -1,0 +1,76 @@
+@import "tailwindcss";
+
+/* ------------------------------------------------------------------ */
+/* Design tokens — navy + gold professional law-firm palette          */
+/* ------------------------------------------------------------------ */
+@theme {
+  --color-navy-50: #f1f4f9;
+  --color-navy-100: #dde4f0;
+  --color-navy-200: #c0cfe3;
+  --color-navy-300: #94aed0;
+  --color-navy-400: #6184b7;
+  --color-navy-500: #41639f;
+  --color-navy-600: #314d83;
+  --color-navy-700: #2a3f6b;
+  --color-navy-800: #0f1e3d;
+  --color-navy-900: #0a1530;
+
+  --color-gold-300: #e2cd8f;
+  --color-gold-400: #d4b86a;
+  --color-gold-500: #c8a44d;
+  --color-gold-600: #b08d35;
+
+  --color-cream: #faf8f3;
+
+  --font-serif: var(--font-playfair), Georgia, "Times New Roman", serif;
+  --font-sans: var(--font-inter), system-ui, -apple-system, sans-serif;
+}
+
+:root {
+  --background: #ffffff;
+  --foreground: #1a1f2e;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+/* Reveal-on-scroll animation utility */
+@keyframes fade-up {
+  from {
+    opacity: 0;
+    transform: translateY(18px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-up {
+  animation: fade-up 0.7s cubic-bezier(0.22, 1, 0.36, 1) both;
+}
+
+/* Subtle gold underline accent for section headings */
+.heading-accent::after {
+  content: "";
+  display: block;
+  width: 64px;
+  height: 3px;
+  margin-top: 0.85rem;
+  background: linear-gradient(90deg, var(--color-gold-500), var(--color-gold-300));
+  border-radius: 9999px;
+}
+
+.heading-accent.center::after {
+  margin-left: auto;
+  margin-right: auto;
+}
