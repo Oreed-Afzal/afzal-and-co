@@ -51,10 +51,11 @@ export default function AboutPage() {
           <Reveal>
             <div className="relative aspect-[3/4] overflow-hidden rounded-2xl shadow-lg">
               <Image
-                src="/images/founder.svg"
+                src="/images/afzal-a-haider.png"
                 alt={`${site.founderName}, founder of ${site.name}`}
                 fill
                 sizes="(max-width: 1024px) 100vw, 50vw"
+                loading="lazy"
                 className="object-cover"
               />
             </div>
